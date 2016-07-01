@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A17B6B81D2666E9006032E1 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A17B6B41D2666E9006032E1 /* libcrypto.a */; };
+		9A17B6B91D2666E9006032E1 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A17B6B51D2666E9006032E1 /* libcurl.a */; };
+		9A17B6BA1D2666E9006032E1 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A17B6B61D2666E9006032E1 /* libssl.a */; };
+		9A17B6BB1D2666E9006032E1 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A17B6B71D2666E9006032E1 /* libHyphenateFullSDK.a */; };
+		9A17B6BF1D266707006032E1 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A17B6BE1D266707006032E1 /* CallViewController.m */; };
 		9A40A3261D1BCB380051E035 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A40A3191D1BCB380051E035 /* 114.png */; };
 		9A40A3271D1BCB380051E035 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A40A31A1D1BCB380051E035 /* 120.png */; };
 		9A40A3281D1BCB380051E035 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A40A31B1D1BCB380051E035 /* 29.png */; };
@@ -144,10 +149,6 @@
 		9A4965B81D1A3AC7001DF611 /* EaseRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4963D51D1A3AC7001DF611 /* EaseRecordView.m */; };
 		9A4965B91D1A3AC7001DF611 /* EaseConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4963D81D1A3AC7001DF611 /* EaseConversationCell.m */; };
 		9A4965BA1D1A3AC7001DF611 /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A4963DA1D1A3AC7001DF611 /* EaseUIResource.bundle */; };
-		9A4965BB1D1A3AC7001DF611 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4964051D1A3AC7001DF611 /* libcrypto.a */; };
-		9A4965BC1D1A3AC8001DF611 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4964061D1A3AC7001DF611 /* libcurl.a */; };
-		9A4965BD1D1A3AC8001DF611 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4964071D1A3AC7001DF611 /* libssl.a */; };
-		9A4965BE1D1A3AC8001DF611 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4964081D1A3AC7001DF611 /* libHyphenateFullSDK.a */; };
 		9A4965BF1D1A3AC8001DF611 /* EaseBubbleView+RedPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A49640E1D1A3AC7001DF611 /* EaseBubbleView+RedPacket.m */; };
 		9A4965C01D1A3AC8001DF611 /* EaseRedBagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4964101D1A3AC7001DF611 /* EaseRedBagCell.m */; };
 		9A4965C11D1A3AC8001DF611 /* RedpacketCellResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A4964111D1A3AC7001DF611 /* RedpacketCellResource.bundle */; };
@@ -182,7 +183,6 @@
 		9A4965DE1D1A3AC8001DF611 /* UIImageView+HeadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A49645F1D1A3AC7001DF611 /* UIImageView+HeadImage.m */; };
 		9A4965DF1D1A3AC8001DF611 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4964611D1A3AC7001DF611 /* UIResponder+Router.m */; };
 		9A4965E01D1A3AC8001DF611 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4964631D1A3AC7001DF611 /* UIViewController+HUD.m */; };
-		9A4965E11D1A3AC8001DF611 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4964681D1A3AC7001DF611 /* CallViewController.m */; };
 		9A4965E21D1A3AC8001DF611 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A49646C1D1A3AC7001DF611 /* ConversationListController.m */; };
 		9A4965E31D1A3AC8001DF611 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A49646F1D1A3AC7001DF611 /* ChatViewController.m */; };
 		9A4965E41D1A3AC8001DF611 /* ChatGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4964721D1A3AC7001DF611 /* ChatGroupDetailViewController.m */; };
@@ -380,6 +380,50 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A17B68C1D2666E9006032E1 /* EMCallLocalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallLocalView.h; sourceTree = "<group>"; };
+		9A17B68D1D2666E9006032E1 /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallManagerDelegate.h; sourceTree = "<group>"; };
+		9A17B68E1D2666E9006032E1 /* EMCallRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallRemoteView.h; sourceTree = "<group>"; };
+		9A17B68F1D2666E9006032E1 /* EMCallSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallSession.h; sourceTree = "<group>"; };
+		9A17B6901D2666E9006032E1 /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatManagerDelegate.h; sourceTree = "<group>"; };
+		9A17B6911D2666E9006032E1 /* EMChatroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroom.h; sourceTree = "<group>"; };
+		9A17B6921D2666E9006032E1 /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
+		9A17B6931D2666E9006032E1 /* EMClient+Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMClient+Call.h"; sourceTree = "<group>"; };
+		9A17B6941D2666E9006032E1 /* EMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClient.h; sourceTree = "<group>"; };
+		9A17B6951D2666E9006032E1 /* EMClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClientDelegate.h; sourceTree = "<group>"; };
+		9A17B6961D2666E9006032E1 /* EMCmdMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCmdMessageBody.h; sourceTree = "<group>"; };
+		9A17B6971D2666E9006032E1 /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMContactManagerDelegate.h; sourceTree = "<group>"; };
+		9A17B6981D2666E9006032E1 /* EMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConversation.h; sourceTree = "<group>"; };
+		9A17B6991D2666E9006032E1 /* EMCursorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCursorResult.h; sourceTree = "<group>"; };
+		9A17B69A1D2666E9006032E1 /* EMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMError.h; sourceTree = "<group>"; };
+		9A17B69B1D2666E9006032E1 /* EMErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMErrorCode.h; sourceTree = "<group>"; };
+		9A17B69C1D2666E9006032E1 /* EMFileMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMFileMessageBody.h; sourceTree = "<group>"; };
+		9A17B69D1D2666E9006032E1 /* EMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroup.h; sourceTree = "<group>"; };
+		9A17B69E1D2666E9006032E1 /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupManagerDelegate.h; sourceTree = "<group>"; };
+		9A17B69F1D2666E9006032E1 /* EMGroupOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupOptions.h; sourceTree = "<group>"; };
+		9A17B6A01D2666E9006032E1 /* EMImageMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMImageMessageBody.h; sourceTree = "<group>"; };
+		9A17B6A11D2666E9006032E1 /* EMLocationMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocationMessageBody.h; sourceTree = "<group>"; };
+		9A17B6A21D2666E9006032E1 /* EMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessage.h; sourceTree = "<group>"; };
+		9A17B6A31D2666E9006032E1 /* EMMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBody.h; sourceTree = "<group>"; };
+		9A17B6A41D2666E9006032E1 /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
+		9A17B6A51D2666E9006032E1 /* EMOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOptions.h; sourceTree = "<group>"; };
+		9A17B6A61D2666E9006032E1 /* EMPushOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPushOptions.h; sourceTree = "<group>"; };
+		9A17B6A71D2666E9006032E1 /* EMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDK.h; sourceTree = "<group>"; };
+		9A17B6A81D2666E9006032E1 /* EMSDKFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDKFull.h; sourceTree = "<group>"; };
+		9A17B6A91D2666E9006032E1 /* EMTextMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextMessageBody.h; sourceTree = "<group>"; };
+		9A17B6AA1D2666E9006032E1 /* EMVideoMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVideoMessageBody.h; sourceTree = "<group>"; };
+		9A17B6AB1D2666E9006032E1 /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceMessageBody.h; sourceTree = "<group>"; };
+		9A17B6AC1D2666E9006032E1 /* IEMCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMCallManager.h; sourceTree = "<group>"; };
+		9A17B6AD1D2666E9006032E1 /* IEMChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatManager.h; sourceTree = "<group>"; };
+		9A17B6AE1D2666E9006032E1 /* IEMChatroomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatroomManager.h; sourceTree = "<group>"; };
+		9A17B6AF1D2666E9006032E1 /* IEMContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMContactManager.h; sourceTree = "<group>"; };
+		9A17B6B01D2666E9006032E1 /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
+		9A17B6B11D2666E9006032E1 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
+		9A17B6B41D2666E9006032E1 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		9A17B6B51D2666E9006032E1 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		9A17B6B61D2666E9006032E1 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		9A17B6B71D2666E9006032E1 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
+		9A17B6BD1D266707006032E1 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		9A17B6BE1D266707006032E1 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 		9A40A3191D1BCB380051E035 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		9A40A31A1D1BCB380051E035 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		9A40A31B1D1BCB380051E035 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
@@ -655,48 +699,6 @@
 		9A4963D71D1A3AC7001DF611 /* EaseConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseConversationCell.h; sourceTree = "<group>"; };
 		9A4963D81D1A3AC7001DF611 /* EaseConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseConversationCell.m; sourceTree = "<group>"; };
 		9A4963DA1D1A3AC7001DF611 /* EaseUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EaseUIResource.bundle; sourceTree = "<group>"; };
-		9A4963DD1D1A3AC7001DF611 /* EMCallLocalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallLocalView.h; sourceTree = "<group>"; };
-		9A4963DE1D1A3AC7001DF611 /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallManagerDelegate.h; sourceTree = "<group>"; };
-		9A4963DF1D1A3AC7001DF611 /* EMCallRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallRemoteView.h; sourceTree = "<group>"; };
-		9A4963E01D1A3AC7001DF611 /* EMCallSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallSession.h; sourceTree = "<group>"; };
-		9A4963E11D1A3AC7001DF611 /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatManagerDelegate.h; sourceTree = "<group>"; };
-		9A4963E21D1A3AC7001DF611 /* EMChatroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroom.h; sourceTree = "<group>"; };
-		9A4963E31D1A3AC7001DF611 /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
-		9A4963E41D1A3AC7001DF611 /* EMClient+Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMClient+Call.h"; sourceTree = "<group>"; };
-		9A4963E51D1A3AC7001DF611 /* EMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClient.h; sourceTree = "<group>"; };
-		9A4963E61D1A3AC7001DF611 /* EMClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClientDelegate.h; sourceTree = "<group>"; };
-		9A4963E71D1A3AC7001DF611 /* EMCmdMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCmdMessageBody.h; sourceTree = "<group>"; };
-		9A4963E81D1A3AC7001DF611 /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMContactManagerDelegate.h; sourceTree = "<group>"; };
-		9A4963E91D1A3AC7001DF611 /* EMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConversation.h; sourceTree = "<group>"; };
-		9A4963EA1D1A3AC7001DF611 /* EMCursorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCursorResult.h; sourceTree = "<group>"; };
-		9A4963EB1D1A3AC7001DF611 /* EMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMError.h; sourceTree = "<group>"; };
-		9A4963EC1D1A3AC7001DF611 /* EMErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMErrorCode.h; sourceTree = "<group>"; };
-		9A4963ED1D1A3AC7001DF611 /* EMFileMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMFileMessageBody.h; sourceTree = "<group>"; };
-		9A4963EE1D1A3AC7001DF611 /* EMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroup.h; sourceTree = "<group>"; };
-		9A4963EF1D1A3AC7001DF611 /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupManagerDelegate.h; sourceTree = "<group>"; };
-		9A4963F01D1A3AC7001DF611 /* EMGroupOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupOptions.h; sourceTree = "<group>"; };
-		9A4963F11D1A3AC7001DF611 /* EMImageMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMImageMessageBody.h; sourceTree = "<group>"; };
-		9A4963F21D1A3AC7001DF611 /* EMLocationMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocationMessageBody.h; sourceTree = "<group>"; };
-		9A4963F31D1A3AC7001DF611 /* EMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessage.h; sourceTree = "<group>"; };
-		9A4963F41D1A3AC7001DF611 /* EMMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBody.h; sourceTree = "<group>"; };
-		9A4963F51D1A3AC7001DF611 /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
-		9A4963F61D1A3AC7001DF611 /* EMOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOptions.h; sourceTree = "<group>"; };
-		9A4963F71D1A3AC7001DF611 /* EMPushOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPushOptions.h; sourceTree = "<group>"; };
-		9A4963F81D1A3AC7001DF611 /* EMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDK.h; sourceTree = "<group>"; };
-		9A4963F91D1A3AC7001DF611 /* EMSDKFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDKFull.h; sourceTree = "<group>"; };
-		9A4963FA1D1A3AC7001DF611 /* EMTextMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextMessageBody.h; sourceTree = "<group>"; };
-		9A4963FB1D1A3AC7001DF611 /* EMVideoMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVideoMessageBody.h; sourceTree = "<group>"; };
-		9A4963FC1D1A3AC7001DF611 /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceMessageBody.h; sourceTree = "<group>"; };
-		9A4963FD1D1A3AC7001DF611 /* IEMCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMCallManager.h; sourceTree = "<group>"; };
-		9A4963FE1D1A3AC7001DF611 /* IEMChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatManager.h; sourceTree = "<group>"; };
-		9A4963FF1D1A3AC7001DF611 /* IEMChatroomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatroomManager.h; sourceTree = "<group>"; };
-		9A4964001D1A3AC7001DF611 /* IEMContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMContactManager.h; sourceTree = "<group>"; };
-		9A4964011D1A3AC7001DF611 /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
-		9A4964021D1A3AC7001DF611 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
-		9A4964051D1A3AC7001DF611 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		9A4964061D1A3AC7001DF611 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
-		9A4964071D1A3AC7001DF611 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		9A4964081D1A3AC7001DF611 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
 		9A49640B1D1A3AC7001DF611 /* Redpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Redpacket.h; sourceTree = "<group>"; };
 		9A49640D1D1A3AC7001DF611 /* EaseBubbleView+RedPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EaseBubbleView+RedPacket.h"; sourceTree = "<group>"; };
 		9A49640E1D1A3AC7001DF611 /* EaseBubbleView+RedPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EaseBubbleView+RedPacket.m"; sourceTree = "<group>"; };
@@ -770,8 +772,6 @@
 		9A4964621D1A3AC7001DF611 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
 		9A4964631D1A3AC7001DF611 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 		9A4964641D1A3AC7001DF611 /* ChatUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatUIDefine.h; sourceTree = "<group>"; };
-		9A4964671D1A3AC7001DF611 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
-		9A4964681D1A3AC7001DF611 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 		9A49646B1D1A3AC7001DF611 /* ConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListController.h; sourceTree = "<group>"; };
 		9A49646C1D1A3AC7001DF611 /* ConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListController.m; sourceTree = "<group>"; };
 		9A49646E1D1A3AC7001DF611 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -1216,30 +1216,112 @@
 			files = (
 				9A4966861D1A3BF6001DF611 /* libiconv.tbd in Frameworks */,
 				9A4966841D1A3BEE001DF611 /* libsqlite3.tbd in Frameworks */,
+				9A17B6BB1D2666E9006032E1 /* libHyphenateFullSDK.a in Frameworks */,
 				9A4966821D1A3BE4001DF611 /* libstdc++.6.0.9.tbd in Frameworks */,
 				9A4966801D1A3BD6001DF611 /* libz.tbd in Frameworks */,
+				9A17B6B81D2666E9006032E1 /* libcrypto.a in Frameworks */,
 				9A49667E1D1A3BCC001DF611 /* libc++.tbd in Frameworks */,
 				9A49667C1D1A3BC0001DF611 /* ImageIO.framework in Frameworks */,
 				9A87F19D1D250CD4006948B2 /* libUCloudMediaPlayer.a in Frameworks */,
 				9A49667A1D1A3BB9001DF611 /* MobileCoreServices.framework in Frameworks */,
 				9A4966781D1A3BAF001DF611 /* AVFoundation.framework in Frameworks */,
 				9A4966761D1A3BA8001DF611 /* AudioToolbox.framework in Frameworks */,
+				9A17B6B91D2666E9006032E1 /* libcurl.a in Frameworks */,
 				9A4966741D1A3B9F001DF611 /* CoreMedia.framework in Frameworks */,
-				9A4965BD1D1A3AC8001DF611 /* libssl.a in Frameworks */,
 				9A4965501D1A3AC7001DF611 /* libopencore-amrwb.a in Frameworks */,
 				9A4965C61D1A3AC8001DF611 /* libRedpacketLib.a in Frameworks */,
 				9A4965DD1D1A3AC8001DF611 /* libMobClickLibrary.a in Frameworks */,
-				9A4965BC1D1A3AC8001DF611 /* libcurl.a in Frameworks */,
 				9A87F19F1D250CD4006948B2 /* libUCloudMediaRecorder.a in Frameworks */,
+				9A17B6BA1D2666E9006032E1 /* libssl.a in Frameworks */,
 				9A49654F1D1A3AC7001DF611 /* libopencore-amrnb.a in Frameworks */,
-				9A4965BE1D1A3AC8001DF611 /* libHyphenateFullSDK.a in Frameworks */,
-				9A4965BB1D1A3AC7001DF611 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A17B68A1D2666E9006032E1 /* HyphenateFullSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9A17B68B1D2666E9006032E1 /* include */,
+				9A17B6B21D2666E9006032E1 /* lib */,
+			);
+			path = HyphenateFullSDK;
+			sourceTree = "<group>";
+		};
+		9A17B68B1D2666E9006032E1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9A17B68C1D2666E9006032E1 /* EMCallLocalView.h */,
+				9A17B68D1D2666E9006032E1 /* EMCallManagerDelegate.h */,
+				9A17B68E1D2666E9006032E1 /* EMCallRemoteView.h */,
+				9A17B68F1D2666E9006032E1 /* EMCallSession.h */,
+				9A17B6901D2666E9006032E1 /* EMChatManagerDelegate.h */,
+				9A17B6911D2666E9006032E1 /* EMChatroom.h */,
+				9A17B6921D2666E9006032E1 /* EMChatroomManagerDelegate.h */,
+				9A17B6931D2666E9006032E1 /* EMClient+Call.h */,
+				9A17B6941D2666E9006032E1 /* EMClient.h */,
+				9A17B6951D2666E9006032E1 /* EMClientDelegate.h */,
+				9A17B6961D2666E9006032E1 /* EMCmdMessageBody.h */,
+				9A17B6971D2666E9006032E1 /* EMContactManagerDelegate.h */,
+				9A17B6981D2666E9006032E1 /* EMConversation.h */,
+				9A17B6991D2666E9006032E1 /* EMCursorResult.h */,
+				9A17B69A1D2666E9006032E1 /* EMError.h */,
+				9A17B69B1D2666E9006032E1 /* EMErrorCode.h */,
+				9A17B69C1D2666E9006032E1 /* EMFileMessageBody.h */,
+				9A17B69D1D2666E9006032E1 /* EMGroup.h */,
+				9A17B69E1D2666E9006032E1 /* EMGroupManagerDelegate.h */,
+				9A17B69F1D2666E9006032E1 /* EMGroupOptions.h */,
+				9A17B6A01D2666E9006032E1 /* EMImageMessageBody.h */,
+				9A17B6A11D2666E9006032E1 /* EMLocationMessageBody.h */,
+				9A17B6A21D2666E9006032E1 /* EMMessage.h */,
+				9A17B6A31D2666E9006032E1 /* EMMessageBody.h */,
+				9A17B6A41D2666E9006032E1 /* EMOptions+PrivateDeploy.h */,
+				9A17B6A51D2666E9006032E1 /* EMOptions.h */,
+				9A17B6A61D2666E9006032E1 /* EMPushOptions.h */,
+				9A17B6A71D2666E9006032E1 /* EMSDK.h */,
+				9A17B6A81D2666E9006032E1 /* EMSDKFull.h */,
+				9A17B6A91D2666E9006032E1 /* EMTextMessageBody.h */,
+				9A17B6AA1D2666E9006032E1 /* EMVideoMessageBody.h */,
+				9A17B6AB1D2666E9006032E1 /* EMVoiceMessageBody.h */,
+				9A17B6AC1D2666E9006032E1 /* IEMCallManager.h */,
+				9A17B6AD1D2666E9006032E1 /* IEMChatManager.h */,
+				9A17B6AE1D2666E9006032E1 /* IEMChatroomManager.h */,
+				9A17B6AF1D2666E9006032E1 /* IEMContactManager.h */,
+				9A17B6B01D2666E9006032E1 /* IEMGroupManager.h */,
+				9A17B6B11D2666E9006032E1 /* OpenGLView20.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9A17B6B21D2666E9006032E1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9A17B6B31D2666E9006032E1 /* 3rdparty */,
+				9A17B6B71D2666E9006032E1 /* libHyphenateFullSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9A17B6B31D2666E9006032E1 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				9A17B6B41D2666E9006032E1 /* libcrypto.a */,
+				9A17B6B51D2666E9006032E1 /* libcurl.a */,
+				9A17B6B61D2666E9006032E1 /* libssl.a */,
+			);
+			path = 3rdparty;
+			sourceTree = "<group>";
+		};
+		9A17B6BC1D266707006032E1 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				9A17B6BD1D266707006032E1 /* CallViewController.h */,
+				9A17B6BE1D266707006032E1 /* CallViewController.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
 		9A40A3171D1BCB380051E035 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1326,8 +1408,8 @@
 		9A4962B41D1A3AC7001DF611 /* ChatSDK */ = {
 			isa = PBXGroup;
 			children = (
+				9A17B68A1D2666E9006032E1 /* HyphenateFullSDK */,
 				9A4962B51D1A3AC7001DF611 /* EaseUI */,
-				9A4963DB1D1A3AC7001DF611 /* HyphenateFullSDK */,
 				9A4964091D1A3AC7001DF611 /* RedpacketSDK */,
 			);
 			path = ChatSDK;
@@ -1913,79 +1995,6 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
-		9A4963DB1D1A3AC7001DF611 /* HyphenateFullSDK */ = {
-			isa = PBXGroup;
-			children = (
-				9A4963DC1D1A3AC7001DF611 /* include */,
-				9A4964031D1A3AC7001DF611 /* lib */,
-			);
-			path = HyphenateFullSDK;
-			sourceTree = "<group>";
-		};
-		9A4963DC1D1A3AC7001DF611 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9A4963DD1D1A3AC7001DF611 /* EMCallLocalView.h */,
-				9A4963DE1D1A3AC7001DF611 /* EMCallManagerDelegate.h */,
-				9A4963DF1D1A3AC7001DF611 /* EMCallRemoteView.h */,
-				9A4963E01D1A3AC7001DF611 /* EMCallSession.h */,
-				9A4963E11D1A3AC7001DF611 /* EMChatManagerDelegate.h */,
-				9A4963E21D1A3AC7001DF611 /* EMChatroom.h */,
-				9A4963E31D1A3AC7001DF611 /* EMChatroomManagerDelegate.h */,
-				9A4963E41D1A3AC7001DF611 /* EMClient+Call.h */,
-				9A4963E51D1A3AC7001DF611 /* EMClient.h */,
-				9A4963E61D1A3AC7001DF611 /* EMClientDelegate.h */,
-				9A4963E71D1A3AC7001DF611 /* EMCmdMessageBody.h */,
-				9A4963E81D1A3AC7001DF611 /* EMContactManagerDelegate.h */,
-				9A4963E91D1A3AC7001DF611 /* EMConversation.h */,
-				9A4963EA1D1A3AC7001DF611 /* EMCursorResult.h */,
-				9A4963EB1D1A3AC7001DF611 /* EMError.h */,
-				9A4963EC1D1A3AC7001DF611 /* EMErrorCode.h */,
-				9A4963ED1D1A3AC7001DF611 /* EMFileMessageBody.h */,
-				9A4963EE1D1A3AC7001DF611 /* EMGroup.h */,
-				9A4963EF1D1A3AC7001DF611 /* EMGroupManagerDelegate.h */,
-				9A4963F01D1A3AC7001DF611 /* EMGroupOptions.h */,
-				9A4963F11D1A3AC7001DF611 /* EMImageMessageBody.h */,
-				9A4963F21D1A3AC7001DF611 /* EMLocationMessageBody.h */,
-				9A4963F31D1A3AC7001DF611 /* EMMessage.h */,
-				9A4963F41D1A3AC7001DF611 /* EMMessageBody.h */,
-				9A4963F51D1A3AC7001DF611 /* EMOptions+PrivateDeploy.h */,
-				9A4963F61D1A3AC7001DF611 /* EMOptions.h */,
-				9A4963F71D1A3AC7001DF611 /* EMPushOptions.h */,
-				9A4963F81D1A3AC7001DF611 /* EMSDK.h */,
-				9A4963F91D1A3AC7001DF611 /* EMSDKFull.h */,
-				9A4963FA1D1A3AC7001DF611 /* EMTextMessageBody.h */,
-				9A4963FB1D1A3AC7001DF611 /* EMVideoMessageBody.h */,
-				9A4963FC1D1A3AC7001DF611 /* EMVoiceMessageBody.h */,
-				9A4963FD1D1A3AC7001DF611 /* IEMCallManager.h */,
-				9A4963FE1D1A3AC7001DF611 /* IEMChatManager.h */,
-				9A4963FF1D1A3AC7001DF611 /* IEMChatroomManager.h */,
-				9A4964001D1A3AC7001DF611 /* IEMContactManager.h */,
-				9A4964011D1A3AC7001DF611 /* IEMGroupManager.h */,
-				9A4964021D1A3AC7001DF611 /* OpenGLView20.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		9A4964031D1A3AC7001DF611 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				9A4964041D1A3AC7001DF611 /* 3rdparty */,
-				9A4964081D1A3AC7001DF611 /* libHyphenateFullSDK.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		9A4964041D1A3AC7001DF611 /* 3rdparty */ = {
-			isa = PBXGroup;
-			children = (
-				9A4964051D1A3AC7001DF611 /* libcrypto.a */,
-				9A4964061D1A3AC7001DF611 /* libcurl.a */,
-				9A4964071D1A3AC7001DF611 /* libssl.a */,
-			);
-			path = 3rdparty;
-			sourceTree = "<group>";
-		};
 		9A4964091D1A3AC7001DF611 /* RedpacketSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -2216,7 +2225,7 @@
 		9A4964651D1A3AC7001DF611 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				9A4964661D1A3AC7001DF611 /* Call */,
+				9A17B6BC1D266707006032E1 /* Call */,
 				9A4964691D1A3AC7001DF611 /* Chat */,
 				9A4964701D1A3AC7001DF611 /* ChatGroup */,
 				9A4964891D1A3AC7001DF611 /* Chatroom */,
@@ -2229,15 +2238,6 @@
 				9A4964B51D1A3AC7001DF611 /* Settings */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		9A4964661D1A3AC7001DF611 /* Call */ = {
-			isa = PBXGroup;
-			children = (
-				9A4964671D1A3AC7001DF611 /* CallViewController.h */,
-				9A4964681D1A3AC7001DF611 /* CallViewController.m */,
-			);
-			path = Call;
 			sourceTree = "<group>";
 		};
 		9A4964691D1A3AC7001DF611 /* Chat */ = {
@@ -3194,7 +3194,6 @@
 				9A4965851D1A3AC7001DF611 /* PSTCollectionViewItemKey.m in Sources */,
 				9A49657A1D1A3AC7001DF611 /* UIImage+EMMultiFormat.m in Sources */,
 				9A4965E41D1A3AC8001DF611 /* ChatGroupDetailViewController.m in Sources */,
-				9A4965E11D1A3AC8001DF611 /* CallViewController.m in Sources */,
 				9A4962A21D1A37B7001DF611 /* AppDelegate.m in Sources */,
 				9A4965D51D1A3AC8001DF611 /* MKNetworkEngine.m in Sources */,
 				9A4965A11D1A3AC7001DF611 /* EaseRefreshTableViewController.m in Sources */,
@@ -3299,6 +3298,7 @@
 				9A4965F91D1A3AC8001DF611 /* ApplyViewController.m in Sources */,
 				9A4966101D1A3AC8001DF611 /* EMSearchDisplayController.m in Sources */,
 				9A87F1A21D250CD4006948B2 /* YzdHUDImageView.m in Sources */,
+				9A17B6BF1D266707006032E1 /* CallViewController.m in Sources */,
 				9A49658A1D1A3AC7001DF611 /* PSTGridLayoutRow.m in Sources */,
 				9A4965761D1A3AC7001DF611 /* MKAnnotationView+EMWebCache.m in Sources */,
 				9A4965731D1A3AC7001DF611 /* EMSDWebImageDownloaderOperation.m in Sources */,
